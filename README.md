@@ -29,7 +29,7 @@ newman run <collection.json> -e <environment.json>
 example output 
 ![image](https://github.com/user-attachments/assets/d31c837f-4ead-4849-997d-6ad7110d4abb)
 
-But you dont have to export all this etc.
+**How to share postman collection link - no need of exporting the collection**
 
 1. Go to postman and collection you want
 2. Find share button
@@ -38,7 +38,19 @@ But you dont have to export all this etc.
 5. open terminal and type
 
 ```
-run newman
+newman run <Copied link>
 
-![image](https://github.com/user-attachments/assets/26748b67-1eda-40f8-8fb2-180bd03abf2c)
+```
+
+but if you using also global var, then you have to export them and include them in command command 
+
+1. Go to Environments on the left panel
+2. Chhose Globals
+3. Click "Export" button on the lerft upper corner 
+4. Choose export and folder where u executing the command
+```
+newman run <Copied link> -g <nazwa_pliku_z_zmiennymi_globalnymi.json>
+```
+
+
 
